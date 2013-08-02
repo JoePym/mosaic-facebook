@@ -23,7 +23,7 @@ module Mosaic
         %w(photo video).each do |post_type|
           define_method post_type  do
             if @object_id && @type == post_type
-              instance_variable_set "@#{post_type}", (AssociationProxy.new(Mosaic::Facebook::Graph.const_get(post_type.capitalize), "/#{@object_id}"))
+              instance_variable_set "@#{post_type}", (AssociationProxy.new(Mosaic::Facebook::Graph.const_get(post_type.capitalize), "/#{@object_id}?fields=source,from"))
             end
           end
         end
