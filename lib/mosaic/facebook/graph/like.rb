@@ -7,7 +7,7 @@ module Mosaic
         class << self
           #TODO: handle paging
           def all(facebook_user, options = {})
-            @all ||= find("/#{facebook_user}/likes", options)
+            @all = find("/#{facebook_user}/likes", options)
           end
 
           def find_by_id(id, page_id, options = {})
