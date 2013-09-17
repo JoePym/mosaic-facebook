@@ -1,4 +1,4 @@
-#Mosaic Facebook API gem
+#Mosaic Facebook API gem [![Build Status](https://travis-ci.org/mosaicxm/mosaic-facebook.png?branch=master)](https://travis-ci.org/mosaicxm/mosaic-facebook)
 
 This gem is designed to make integrating a Facebook application easy into your ruby program.
 
