@@ -4,6 +4,8 @@
 require 'rubygems'
 require 'bundler/setup'
 require 'vcr'
+require 'simplecov'
+SimpleCov.start
 Bundler.require(:default)
 
 SPEC_DIR = File.dirname(__FILE__)
