@@ -4,9 +4,23 @@
 require 'rubygems'
 require 'bundler/setup'
 require 'vcr'
-require 'simplecov'
-SimpleCov.start
 Bundler.require(:default)
+
+if RUBY_VERSION >= '1.9.3'
+  require 'simplecov'
+  require 'simplecov-rcov'
+
+  SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+    SimpleCov::Formatter::HTMLFormatter,
+    SimpleCov::Formatter::RcovFormatter,
+  ]
+
+  SimpleCov.start do
+    add_filter 'spec'
+  end
+else
+  require 'rspec/autorun'
+end
 
 SPEC_DIR = File.dirname(__FILE__)
 # lib_path = File.expand_path("#{SPEC_DIR}/../lib")
