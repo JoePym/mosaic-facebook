@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://graph.facebook.com/page_id_377489315701549/comments?access_token
+    uri: https://graph.facebook.com/page_id_377489315701549/comments?access_token=
     body:
       encoding: US-ASCII
       string: ""
@@ -47,7 +47,7 @@ http_interactions:
   recorded_at: Thu, 06 Jun 2013 18:17:21 GMT
 - request:
     method: get
-    uri: https://graph.facebook.com/page_id_375522369231577/comments?access_token
+    uri: https://graph.facebook.com/page_id_375522369231577/comments?access_token=
     body:
       encoding: US-ASCII
       string: ""

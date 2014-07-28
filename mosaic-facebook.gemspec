@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.rubyforge_project = "mosaic_facebook"
   s.required_rubygems_version = ">= 1.3.4"
 
-  s.add_dependency "faraday", "~> 0.8.7"
+  s.add_dependency "faraday", "~> 0.9.0"
   s.add_dependency "faraday_middleware", "~> 0.9.0"
   s.add_dependency "multi_xml", "~> 0.5.3"
   s.add_dependency "activesupport", "~> 3.0"

@@ -1,44 +1,44 @@
---- 
-http_interactions: 
-- request: 
+---
+http_interactions:
+- request:
     method: get
-    uri: https://api.facebook.com/method/notifications.sendEmail?access_token&recipients=000000000&subject=testing&text=ajit
-    body: 
+    uri: https://api.facebook.com/method/notifications.sendEmail?access_token=&recipients=000000000&subject=testing&text=ajit
+    body:
       encoding: US-ASCII
       string: ""
-    headers: 
-      User-Agent: 
+    headers:
+      User-Agent:
       - Faraday v0.8.7
-      Accept-Encoding: 
+      Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept: 
+      Accept:
       - "*/*"
-  response: 
-    status: 
+  response:
+    status:
       code: 200
       message: OK
-    headers: 
-      Access-Control-Allow-Origin: 
+    headers:
+      Access-Control-Allow-Origin:
       - "*"
-      Cache-Control: 
+      Cache-Control:
       - private, no-cache, no-store, must-revalidate
-      Content-Type: 
+      Content-Type:
       - text/xml;charset=utf-8
-      Expires: 
+      Expires:
       - Sat, 01 Jan 2000 00:00:00 GMT
-      Pragma: 
+      Pragma:
       - no-cache
-      X-Fb-Rev: 
+      X-Fb-Rev:
       - "837897"
-      X-Fb-Debug: 
+      X-Fb-Debug:
       - Hg0+obJJfTns2BYAvFACc9NXPAXoIbh0tb2sckhGfVQ=
-      Date: 
+      Date:
       - Thu, 06 Jun 2013 18:17:12 GMT
-      Connection: 
+      Connection:
       - keep-alive
-      Content-Length: 
+      Content-Length:
       - "763"
-    body: 
+    body:
       encoding: US-ASCII
       string: |
         <?xml version="1.0" encoding="UTF-8"?>
@@ -69,6 +69,6 @@ http_interactions:
           </request_args>
         </error_response>
 
-    http_version: 
+    http_version:
   recorded_at: Thu, 06 Jun 2013 18:17:16 GMT
 recorded_with: VCR 2.5.0
